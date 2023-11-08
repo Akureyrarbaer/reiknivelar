@@ -13,18 +13,29 @@
             color: #005eb8;
             font-weight: bold;
           }
+          .logo img {
+              max-height: 150px;
+              max-width: 150px;
+          }
+          @media screen and (max-width: 300px) {
+              img {
+                display: none;
+              }
+          }
         </style>
     </head>
     <body>
     <div class="w3-container w3-center">
-        <h2>Ýmsar reiknivélar gjalda hjá Akureyrarbær</h2>
-
-            <div class="w3-panel w3-red">
+        <div class="w3-full">
+            <a class="w3-display-topright logo" href="https://www.akureyri.is/" title="Hlekkur í heimasíðu Akureyrarbæjar"><img src="Akureyri.png" alt="Merki Akureyrarbæjar"></a>
+            <h2>Ýmsar reiknivélar gjalda hjá Akureyrarbæ</h2>
+        </div>
+        
+            <div class="w3-third w3-margin w3-padding-16 w3-red">
                 <i class="fa fa-child w3-xxxlarge"></i><br />
                 <a href="https://reiknivelar.akureyri.is/leikskolar/">Reiknivél leikskólagjalda</a>
             </div>
-
-            <div class="w3-panel w3-blue">
+            <div class="w3-third w3-margin w3-padding-16 w3-blue">
                 <i class="fa fa-trash w3-xxxlarge"></i><br />
                 <a href="https://reiknivelar.akureyri.is/sorphirda/">Reiknivél sorphirðugjalda</a>
             </div>
